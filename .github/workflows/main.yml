@@ -39,34 +39,34 @@ jobs:
       - name: Upload Artifact (macOS)
         uses: actions/upload-artifact@v3
         with:
-          name: zyplayer-mac
+          name: 1-player-mac
           path: ./dist/*-mac-*.dmg
           if-no-files-found: ignore
 
       - name: Upload Artifact (Windows)
         uses: actions/upload-artifact@v3
         with:
-          name: zyplayer-win
+          name: 1-player-win
           path: ./dist/*-win-*.exe
           if-no-files-found: ignore
 
       - name: Upload Artifact (Linux AppImage)
         uses: actions/upload-artifact@v3
         with:
-          name: zyplayer-linux-appimage
+          name: 1-player-linux-appimage
           path: ./dist/*.AppImage
           if-no-files-found: ignore
 
       - name: Upload Artifact (Linux deb)
         uses: actions/upload-artifact@v3
         with:
-          name: zyplayer-linux-deb
+          name: 1-player-linux-deb
           path: ./dist/*.deb
           if-no-files-found: ignore
 
       - name: Upload Artifact (Linux rpm)
         uses: actions/upload-artifact@v3
         with:
-          name: zyplayer-linux-rpm
+          name: 1-player-linux-rpm
           path: ./dist/*.rpm
           if-no-files-found: ignore
